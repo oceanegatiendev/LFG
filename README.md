@@ -1,0 +1,1 @@
+Application for create groups with strangers
