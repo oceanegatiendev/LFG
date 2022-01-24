@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-dropleft-circle" text="" color="tertiary"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="tertiary">Vérification de l'e-mail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-grid>
+    <ion-row>
+      <h2>Validation de votre adresse e-mail</h2>
+    </ion-row>
+    <ion-row>
+      <p>
+        Un e-mail de confirmation vous a été envoyé a l'adresse fournie précédemment. Pour vous connecter, vous devez valider votre adresse e-email.
+      </p>
+    </ion-row>
+    <ion-row>
+      <h4>Vous n'avez pas reçu l'e-mail ?</h4>
+    </ion-row>
+    <ion-row>
+
+
+      <ion-button shape="round" fill="outline" color="tertiary" type="submit" (click)="auth.sendVerificationMail()">
+        Renvoyer l'email de vérification
+      </ion-button>
+      <ion-button shape="round" fill="outline" color="tertiary" (click)= "back()">OK</ion-button>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

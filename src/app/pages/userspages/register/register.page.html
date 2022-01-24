@@ -1,0 +1,30 @@
+<ion-app color="medium">
+  
+  <ion-header >
+    <ion-toolbar color="dark">
+      <ion-title color="tertiary">Créer un compte</ion-title>
+    </ion-toolbar>
+  </ion-header >
+  
+  <ion-content color="dark">
+
+
+      <ion-item color="dark">
+        <ion-label color="tertiary" position="floating">E-mail</ion-label>
+        <ion-input color="light" type="email" placeholder="E-mail" [(ngModel)]= "user.email"></ion-input>
+      </ion-item>
+    
+      <ion-item color="dark"> 
+        <ion-label color="tertiary" position="floating">Mot de passe</ion-label>
+        <ion-input color="light" type="password" placeholder="Mot de passe" [(ngModel)]= "user.password"></ion-input>
+      </ion-item>
+    
+      <ion-button expand="block" shape="round" fill="outline" color="tertiary" (click)= "signUp()">Créer un compte</ion-button>
+
+
+    <ion-button expand="block" shape="round" fill="outline" color="success" href="/login">Vous avez déjà un compte, connectez-vous !</ion-button>
+      
+    
+  </ion-content>
+
+</ion-app>

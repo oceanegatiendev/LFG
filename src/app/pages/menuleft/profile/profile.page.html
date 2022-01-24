@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-dropleft-circle" text="" color="tertiary"></ion-back-button>
+    </ion-buttons>
+    <ion-avatar>
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-title>profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-tabs >
+
+    <ion-tab-bar color="dark" slot="bottom">
+
+      <ion-tab-button href="/tabs/home">
+        <ion-icon color="tertiary" name="home"></ion-icon>
+        <ion-label color="tertiary">Accueil</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button href="/tabs/search" (click)= "searchTabSelected()">
+        <ion-icon color="tertiary" name="search"></ion-icon>
+        <ion-label color="tertiary">Recherche</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button href="/tabs/createlfg" (click)= "searchTabSelected()">
+        <ion-icon color="tertiary" name="add"></ion-icon>
+        <ion-label color="tertiary">Création</ion-label>
+      </ion-tab-button>
+      
+      <ion-tab-button href="/tabs/notifications" (click)= "searchTabSelected()">
+        <ion-icon color="tertiary" name="notifications"></ion-icon>
+        <ion-label color="tertiary">Notifications</ion-label>
+      </ion-tab-button>
+
+
+    </ion-tab-bar>
+
+  </ion-tabs>
+</ion-content>

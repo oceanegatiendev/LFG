@@ -1,0 +1,30 @@
+<ion-app color="medium">
+  
+  <ion-header >
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-back-button icon="arrow-dropleft-circle" text="" color="tertiary"></ion-back-button>
+      </ion-buttons>
+      <ion-title color="tertiary">Enregistrement des détails du compte</ion-title>
+    </ion-toolbar>
+  </ion-header >
+  
+  <ion-content color="dark">
+
+
+      <ion-item color="dark">
+        <ion-label color="tertiary" position="floating">Nom d'utilisateur</ion-label>
+        <ion-input color="light" maxlength="25" type="text" placeholder="Nom d'utilisateur" [(ngModel)]= "user.displayName"></ion-input>
+      </ion-item>
+    
+      <ion-item color="dark"> 
+        <ion-label color="tertiary" position="floating">Image de profil</ion-label>
+        <ion-input color="light" type="text" placeholder="avatar" [(ngModel)]= "user.photoURL"></ion-input>
+      </ion-item>
+    
+      <ion-button expand="block" shape="round" fill="outline" color="tertiary" (click)= "saveDetails()">Valider</ion-button>
+      
+    
+  </ion-content>
+
+</ion-app>

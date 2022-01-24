@@ -1,0 +1,32 @@
+<ion-app>
+
+    <ion-menu contentId="leftmenu">
+
+        <ion-header>
+            <ion-toolbar color="dark">
+                <ion-title color="tertiary">Menu</ion-title>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content color="dark">
+            <ion-list *ngFor="let pages of pages">
+                <ion-menu-toggle auto-hide="false">
+                    <ion-item ngClass="itemSideMenu" [routerLink]="pages.url" routerDirection="forward">
+                        <ion-icon color="tertiary" [name]="pages.icon" slot="start"></ion-icon>
+                        {{pages.title}}
+                    </ion-item>
+                </ion-menu-toggle>
+            </ion-list>
+            <ion-list color="dark">
+                <ion-item ngClass="outItem" (click)="signOut()">
+                    <ion-icon color='danger' name='power'></ion-icon>
+                        Déconnexion
+                </ion-item>
+            </ion-list>
+        </ion-content>
+
+    </ion-menu>
+
+    <ion-router-outlet id="leftmenu" main></ion-router-outlet>
+
+</ion-app>
